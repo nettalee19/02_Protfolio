@@ -328,6 +328,7 @@ header img:hover{
   height: 50px;
   background: var(--light-color); 
   border-radius: 50px;
+  border: 2px black dotted;
   /* box-shadow: 10px 10px 0 0  var(--dark-color); */
   animation: roll 15s linear infinite;
   position: relative;
