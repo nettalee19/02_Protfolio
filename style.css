@@ -433,6 +433,74 @@ header img:hover{
 
 
 
+#contact-form{
+  padding: 30px 30px;
+  background: url('/img/pexels-miguel-á-padriñán-255379.jpg') no-repeat center center/cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact-form .form-group{
+  margin-bottom: 20px;
+  
+}
+
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 50%;
+  padding:10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height:200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #444;
+}
+
+.btn_contact{
+  position: relative;
+  z-index: 10;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: #333;
+  
+}
+
+.btn_contact::before{ /*these are the button's animation properties. */
+  content: '';
+  position: absolute; /*the btn positioned relative and so the before is absolute to be on top of it*/
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 20; 
+  background: var(--secondary-color);
+  opacity: 0.7;
+
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(0); /*starts from the middle of the button*/
+  /* transform-origin: right; */
+}
+
+.btn_contact:hover:before{
+  transform: scaleY(1); /*reaches the top and bottom of the button*/
+  
+}
+
+
+
+
+
 
 
 
